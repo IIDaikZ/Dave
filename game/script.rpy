@@ -177,8 +177,6 @@ label start:
 
         scene bg labormix
         call screen LaborItems
-
-      
   
         "Ich hoffe du weißt was zu tun ist. Kleine Hilfe am Rande. Die dritte Farbe ist pink."
 
