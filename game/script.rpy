@@ -22,8 +22,6 @@ image bg labormix = "bg labormix.jpg"
 image Itemglas = ConditionSwitch(
     "itemsAreAdded == True", "glasleuchten.png",
     "True", "glas_idle.png")
-default calledZimmerScreen = False
-
 
 transform my_Left: 
     xalign 0.1 yalign 1.0
@@ -378,8 +376,6 @@ label start:
     label todesSzene:
 
         return
-
-
 
     return
 
