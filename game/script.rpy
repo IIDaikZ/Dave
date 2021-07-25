@@ -399,3 +399,8 @@ label variables:
         zimmerImageButtons.append(Items("bücher"))
         zimmerImageButtons.append(Items("buch"))
         zimmerImageButtons.append(Items("gitarre"))
+
+
+label wladi_ist_schwul:
+    python:
+        print("wladislav ist vllt. schwul wer weiss das schon")
