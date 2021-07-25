@@ -1,0 +1,72 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While loading <'Image' u'gittare_idle.png'>:
+  File "game/script.rpy", line 183, in script
+    call screen zimmerItem
+  File "renpy/common/000statements.rpy", line 569, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+IOError: Couldn't find file 'gittare_idle.png'.
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 183, in script
+    call screen zimmerItem
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/ast.py", line 2009, in execute
+    self.call("execute")
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/ast.py", line 1997, in call
+    return renpy.statements.call(method, parsed, *args, **kwargs)
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/statements.py", line 278, in call
+    return method(parsed, *args, **kwargs)
+  File "renpy/common/000statements.rpy", line 569, in execute_call_screen
+    store._return = renpy.call_screen(name, *args, **kwargs)
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/exports.py", line 3057, in call_screen
+    rv = renpy.ui.interact(mouse="screen", type="screen", roll_forward=roll_forward)
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/ui.py", line 298, in interact
+    rv = renpy.game.interface.interact(roll_forward=roll_forward, **kwargs)
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/core.py", line 3276, in interact
+    repeat, rv = self.interact_core(preloads=preloads, trans_pause=trans_pause, pause=pause, pause_start=pause_start, **kwargs)
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/core.py", line 3792, in interact_core
+    self.draw_screen(root_widget, fullscreen_video, (not fullscreen_video) or video_frame_drawn)
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/core.py", line 2521, in draw_screen
+    renpy.config.screen_height,
+  File "render.pyx", line 492, in renpy.display.render.render_screen
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/layout.py", line 786, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/layout.py", line 786, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/layout.py", line 786, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/screen.py", line 681, in render
+    child = renpy.display.render.render(self.child, w, h, st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/layout.py", line 786, in render
+    surf = render(child, width, height, cst, cat)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/behavior.py", line 791, in render
+    rv = super(Button, self).render(width, height, st, at)
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/layout.py", line 1193, in render
+    st, at)
+  File "render.pyx", line 170, in renpy.display.render.render
+  File "render.pyx", line 263, in renpy.display.render.render
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/im.py", line 607, in render
+    return cache.get(self, render=True)
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/im.py", line 271, in get
+    surf = image.load()
+  File "C:\Users\master\Downloads\renpy-7.4.6-sdk/renpy/display/im.py", line 688, in load
+    raise e
+IOError: Couldn't find file 'gittare_idle.png'.
+
+Windows-10-10.0.19041
+Ren'Py 7.4.6.1693
+Dave 1.0
+Sun Jul 25 14:52:53 2021
